@@ -35,7 +35,7 @@
 		
           if (dist(mouseX, mouseY, bubble.x, bubble.y) < bubble.radius) {
       			if (mouseIsPressed) {
-      				bubbles.splice(i, 1); // remove this bubble!
+      				bubbles.splice(i, 4); // remove this bubble!
       			}
       			fill(55, 200, 200, 200);
       		} else {
