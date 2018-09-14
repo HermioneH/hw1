@@ -16,19 +16,19 @@
       var bubbles = [];
 
       function setup() {
-        createCanvas(700, 700);
+        createCanvas(600, 400);
   
       	for (var i = 0; i < 10; i++) {
       		bubbles.push({
       			x: random(width),
       			y: random(height),
-      			radius: random(50, 100)
+      			radius: random(10, 80)
       		});
       	}
       }
 
       function draw() {
-        background(255);
+        background(200);
 	
         for (var i = 0; i < bubbles.length; i++) {
       		var bubble = bubbles[i];
@@ -37,14 +37,14 @@
       			if (mouseIsPressed) {
       				bubbles.splice(i, 1); // remove this bubble!
       			}
-      			fill(255, 200, 200, 200);
+      			fill(55, 200, 200, 200);
       		} else {
-      			fill(255, 220, 200, 200);
+      			fill(1225, 20, 200, 200);
       		}
 	
-          ellipse(bubble.x, bubble.y, bubble.radius*2);
-      		bubble.x += random(-1,1);
-      		bubble.y += random(-1,1);
+          ellipse(bubble.x, bubble.y, bubble.radius*0.95);
+      		bubble.x += random(-0.975,0.975);
+      		bubble.y += random(-0.12,0.12);
       	}
       }
     </script>
